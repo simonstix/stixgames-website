@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { NavBar } from "@/app/_ui/nav-bar/nav-links";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,5 +32,20 @@ export default function RootLayout({
         {children}
       </body>
     </html>
+  );
+}
+
+export function Layout({
+  children,
+  hoverOverContent,
+}: Readonly<{
+  children: React.ReactNode;
+  hoverOverContent: boolean;
+}>) {
+  return (
+    <div>
+      <NavBar hoverOverContent={hoverOverContent} />
+      {children}
+    </div>
   );
 }
