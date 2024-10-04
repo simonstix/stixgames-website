@@ -1,5 +1,6 @@
 import { impressum } from "@/app/impressum/impressum.html";
-import { Layout } from "@/app/layout";
+
+import { Layout } from "@/app/page-layout";
 
 export default function Impressum() {
   return (

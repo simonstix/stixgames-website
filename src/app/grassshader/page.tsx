@@ -1,4 +1,3 @@
-import { Layout } from "@/app/layout";
 import { TitleVideo } from "@/app/_ui/title-video";
 import Link from "next/link";
 import {
@@ -8,6 +7,7 @@ import {
   RocketLaunchIcon,
 } from "@heroicons/react/24/solid";
 import { ArrowPathIcon, CheckIcon } from "@heroicons/react/16/solid";
+import { Layout } from "@/app/page-layout";
 
 function LargeFeatures() {
   return (

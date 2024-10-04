@@ -1,5 +1,6 @@
 // `app/page.tsx` is the UI for the `/` URL
-import { Layout } from "@/app/layout";
+
+import { Layout } from "@/app/page-layout";
 
 export default function TileComposer() {
   return (

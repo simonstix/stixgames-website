@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Layout } from "@/app/layout";
+
+import { Layout } from "@/app/page-layout";
 
 export default function TileComposerDocumentation() {
   return (

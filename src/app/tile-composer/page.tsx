@@ -1,8 +1,8 @@
 // `app/page.tsx` is the UI for the `/` URL
-import { Layout } from "@/app/layout";
 import { TileComposerIntro } from "@/app/tile-composer/intro";
 import VideoDisplay from "@/app/_ui/video-display";
 import { TitleVideo } from "@/app/_ui/title-video";
+import { Layout } from "@/app/page-layout";
 
 export default function TileComposer() {
   return (

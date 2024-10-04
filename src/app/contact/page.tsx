@@ -1,6 +1,6 @@
-import { Layout } from "@/app/layout";
 import ContactForm from "@/app/contact/contact-form";
 import React from "react";
+import { Layout } from "@/app/page-layout";
 
 export default function Contact() {
   return (
