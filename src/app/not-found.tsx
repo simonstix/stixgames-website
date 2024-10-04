@@ -3,8 +3,8 @@ import { Layout } from "@/app/layout";
 
 export default function TileComposer() {
   return (
-    <Layout>
-      <div className="flex h-96 items-center justify-center">
+    <Layout hoverOverContent={false}>
+      <div className="absolute inset-0 flex items-center justify-center">
         <div className="flex flex-row items-center justify-center">
           <div className="mr-4 border-r border-slate-700 pr-4 text-5xl">
             404
