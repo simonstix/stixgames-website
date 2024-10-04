@@ -69,7 +69,7 @@ export function NavBar({
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex gap-2">
                   {navigation.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
                       href={item.href}
                       aria-current={
@@ -85,7 +85,7 @@ export function NavBar({
                       )}
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>

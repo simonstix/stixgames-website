@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ReactTyped } from "react-typed";
 
 export function TileComposerIntro() {
@@ -26,18 +27,18 @@ export function TileComposerIntro() {
       </p>
 
       <div className="mt-2 flex flex-row flex-wrap items-center gap-2 text-center">
-        <a
+        <Link
           className="rounded-full bg-amber-600 p-4 px-8 text-sm font-semibold uppercase text-amber-100 hover:bg-amber-500"
           href="https://assetstore.unity.com/packages/tools/modeling/tile-composer-163864?aid=1011l9eTK"
         >
           Buy on the asset store
-        </a>
-        <a
+        </Link>
+        <Link
           className="rounded-full border-2 border-amber-600 p-4 px-8 text-sm font-semibold uppercase text-amber-100 hover:bg-amber-500/70"
-          href="https://assetstore.unity.com/packages/tools/modeling/tile-composer-163864?aid=1011l9eTK"
+          href="https://docs.stixgames.com/tile-composer/"
         >
           Documentation
-        </a>
+        </Link>
       </div>
     </div>
   );

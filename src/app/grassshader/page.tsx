@@ -80,8 +80,9 @@ function LargeFeatures() {
   );
 }
 
-export default function TileComposer() {
-  const documentationUrl = "";
+export default function GrassShader() {
+  const documentationUrl =
+    "https://docs.stixgames.com/directx-11-grass-shader/";
   return (
     <Layout
       hoverOverContent={true}
