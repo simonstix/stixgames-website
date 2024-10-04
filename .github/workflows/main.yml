@@ -29,8 +29,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          lfs: true
+      - name: Pull LFS
+        uses: ./.github/actions/cached-lfs-pull
+
       - name: Detect package manager
         id: detect-package-manager
         run: |

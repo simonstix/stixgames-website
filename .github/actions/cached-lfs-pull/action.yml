@@ -1,0 +1,34 @@
+name: "Pull LFS with cache"
+# inputs:
+# who-to-greet:  # id of input
+# description: 'Who to greet'
+# required: true
+# default: 'World'
+# outputs:
+# random-number:
+# description: "Random number"
+# value: ${{ steps.random-number-generator.outputs.random-number }}
+runs:
+  using: "composite"
+  steps:
+    - name: Create LFS file list
+      run: git lfs ls-files -l | cut -d' ' -f1 | sort > .lfs-assets-id
+      shell: bash
+    - name: Restore LFS cache
+      uses: actions/cache/restore@v4
+      id: lfs-cache
+      with:
+        path: .git/lfs/objects
+        key: ${{ runner.os }}-lfs-${{ hashFiles('.lfs-assets-id') }}
+        restore-keys: |
+          ${{ runner.os }}-lfs-
+
+    - name: Git LFS Pull
+      run: git lfs pull
+      shell: bash
+    - name: Save LFS data to cache
+      uses: actions/cache/save@v4
+      if: steps.lfs-cache.outputs.cache-hit != 'true'
+      with:
+        path: .git/lfs/objects
+        key: ${{ runner.os }}-lfs-${{ hashFiles('.lfs-assets-id') }}
