@@ -13,12 +13,8 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  {
-    name: "DirectX 11 Grass Shader",
-    href: "/grassshader",
-    paths: ["/grassshader"],
-  },
-  { name: "Tile Composer", href: "/", paths: ["/", "/tile-composer"] },
+  { name: "DirectX 11 Grass Shader", href: "/", paths: ["/", "/grassshader"] },
+  { name: "Tile Composer", href: "/tile-composer", paths: ["/tile-composer"] },
   { name: "Contact", href: "/contact", paths: ["/contact"] },
 ];
 
