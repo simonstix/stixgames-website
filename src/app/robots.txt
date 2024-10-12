@@ -3,4 +3,4 @@ Allow: /
 Disallow: /private/
 Disallow: /impressum
 
-Sitemap: https://acme.com/sitemap.xml
+Sitemap: https://stixgames.com/sitemap.xml
