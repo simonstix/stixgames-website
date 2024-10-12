@@ -1,5 +1,5 @@
-import TileComposer from "@/app/tile-composer/page";
+import GrassShader from "@/app/grassshader/page";
 
 export default function Home() {
-  return TileComposer();
+  return GrassShader();
 }
